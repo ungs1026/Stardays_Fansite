@@ -2,6 +2,9 @@
 <!--프로젝트 메인 이미지-->
 ![Project Title](readme_img/main_img.png)
 
+<hr>
+
+# 목차
 <!--목차-->
 - [Project](#project)
     - [Features](#features)
