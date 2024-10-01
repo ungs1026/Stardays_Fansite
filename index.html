@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Stardays FS</title>
+
+	<!--Twitter Card-->
+	<!--https://developer.twitter.com/en/docs/twitter-for-websites/cards/guides/getting-started-->
+	<meta property="twitter:card" content="summary" />
+	<meta property="twitter:site" content="Stellive FanSite" />
+	<meta property="twitter:title" content="Ganggi Stellive" />
+	<meta property="twitter:image" content="./img/logo/logo.jpg" />
+
+	<!--파비콘-->
+	<!--<link rel="shortcut icon" href="favicon.ico" />-->
+	<link rel="icon" href="./img/logo/logo.jpg" />
+	<!--브라우저 스타일 초기화-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
+	<!--Google Fonts - 나눔고딕-->
+	<link rel="preconnect" href="https://fonts.gstatic.com" />
+	<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet" />
+	<!--Google Material Icons-->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+
+	<!--GSAP & ScrollToPlugin-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+		integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollToPlugin.min.js"
+		integrity="sha512-nTHzMQK7lwWt8nL4KF6DhwLHluv6dVq/hNnj2PBN0xMl2KaMm1PM02csx57mmToPAodHmPsipoERRNn4pG7f+Q=="
+		crossorigin="anonymous"></script>
+	<!--Swiper-->
+	<link rel="stylesheet" href="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css" />
+	<script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script>
+	<!--ScrollMagic-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+	<!--Lodash-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js"
+		integrity="sha512-90vH1Z83AJY9DmlWa8WkjkV79yfS2n2Oxhsi2dZbIv0nC4E6m5AbH8Nh156kkM7JePmqD6tcZsfad1ueoaovww=="
+		crossorigin="anonymous"></script>
+
+	<!--Local Script-->
+	<link rel="stylesheet" href="./css/main.css">
+	<script defer src="./js/main.js"></script>
+</head>
+
+<body>
+	<!--Top Bar-->
+	<header class="topbar">
+		<section class="main--top">
+			<div class="simple--logo">
+				<a href="./index.html"">
+					<img src="./img/logo/logo.jpg" alt="...">
+				</a>
+			</div>
+			<div class="main--logo">
+				<a href="*">
+					<img src="./img/logo/logo_row.jpg" alt="...">
+				</a>
+			</div>
+			<nav>
+				<ul class="menu-nav">
+					<li>
+						<a href="./html/news.html">
+							<span>NEWS</span>
+						</a>
+					</li>
+					<li>
+						<a href="./html/info.html">
+							<span>INFO</span>
+						</a>
+					</li>
+					<li>
+						<a href="./html/mainAlbums.html">
+							<span>MAIN ALBUMS</span>
+						</a>
+					</li>
+					<li>
+						<a href="https://fanding.kr/@STARDAYS" target="_blank">
+							<span>GOODS</span>
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</section>
+	</header>
+
+	<!--Main Img-->
+	<div class="middle-img">
+		<img src="./img/member_img/mainImg.png" alt="">
+	</div>
+
+	<!--Member Icon-->
+	<contain class="member-icon-group">
+		<div class="member">
+			<div class="member-img">
+				<a href="https://namu.wiki/w/%EC%BF%A0%EB%A0%88%EB%82%98%EC%9D%B4%20%EB%82%98%EC%B8%A0%ED%82%A4" target="_blank">
+					<img src="./img/member_img/Kurenai Natsuki.jpg" alt="...">
+					<p>Kurenai Natsuki</p>
+				</a>
+			</div>
+			<div class="member-sns">
+				<a href="https://chzzk.naver.com/a54372e8197f6d241a43a318279860d6" target="_blank">
+					<img src="./img/logo/chzzk-logo.jpg" alt="...">
+				</a>
+				<a href="https://x.com/Kurenai_Natsuki" target="_blank">
+					<img src="./img/logo/x-logo.png" alt="...">
+				</a>
+				<a href="https://www.youtube.com/@Kurenai_Natsuki" target="_blank">
+					<img src="./img/logo/youtube-logo.png" alt="...">
+				</a>
+			</div>
+		</div>
+		<div class="member">
+			<div class="member-img">
+				<a href="https://namu.wiki/w/%EB%B0%98(%EC%9D%B8%ED%84%B0%EB%84%B7%20%EB%B0%A9%EC%86%A1%EC%9D%B8)" target="_blank">
+					<img src="./img/member_img/van_sama.jpg" alt="...">
+					<p>Van_Sama</p>
+				</a>
+			</div>
+			<div class="member-sns">
+				<a href="https://chzzk.naver.com/3a2d2f4e9132d822423f6aa879e598c5" target="_blank">
+					<img src="./img/logo/chzzk-logo.jpg" alt="...">
+				</a>
+				<a href="https://x.com/Van_Nim_" target="_blank">
+					<img src="./img/logo/x-logo.png" alt="...">
+				</a>
+				<a href="https://www.youtube.com/c/%EB%B0%98%EB%8B%98" target="_blank">
+					<img src="./img/logo/youtube-logo.png" alt="...">
+				</a>
+			</div>
+		</div>
+		<div class="member">
+			<div class="member-img">
+				<a href="https://namu.wiki/w/%ED%85%8C%EB%A6%AC%20%EB%88%88%EB%82%98" target="_blank">
+					<img src="./img/member_img/Terri nunna.jpg" alt="...">
+					<p>Terri nunna</p>
+				</a>
+			</div>
+			<div class="member-sns">
+				<a href="https://chzzk.naver.com/0a2020b09b8cc7f2285b7ae5de2ce4d3" target="_blank">
+					<img src="./img/logo/chzzk-logo.jpg" alt="...">
+				</a>
+				<a href="https://x.com/Terri_Nunna" target="_blank">
+					<img src="./img/logo/x-logo.png" alt="...">
+				</a>
+				<a href="https://www.youtube.com/@Terri_Nunna" target="_blank">
+					<img src="./img/logo/youtube-logo.png" alt="...">
+				</a>
+			</div>
+		</div>
+	</contain>
+
+	<!--regular album-->
+	<section class="album">
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<iframe width="640" height="360" src="https://www.youtube.com/embed/DmM-L829q80?si=4DIvB2ZhilkLfK7T"
+						title="YouTube video player" frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+						referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+				</div>
+				<div class="swiper-slide">
+					<iframe width="640" height="360" src="https://www.youtube.com/embed/Ehbt9BtALDI?si=oJ3hLsF27ghegFFA"
+						title="YouTube video player" frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+						referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+				</div>
+				<div class="swiper-slide">
+					<iframe width="640" height="360" src="https://www.youtube.com/embed/wVmSSxDkELQ?si=iwoVwpzCnuFAeWi0"
+						title="YouTube video player" frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+						referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+				</div>
+				<div class="swiper-slide">
+					<iframe width="640" height="360" src="https://www.youtube.com/embed/PFcPopYxft4?si=1sIl11q3xpOavmxW"
+						title="YouTube video player" frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+						referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
+
+		<div class="swiper-pagination"></div>
+
+		<div class="swiper-prev">
+			<span class="material-icons">arrow_back</span>
+		</div>
+		<div class="swiper-next">
+			<span class="material-icons">arrow_forward</span>
+		</div>
+	</section>
+
+	<!--Schedule-->
+	<h2 class="index">Members Schedule</h2>
+	<section class="members-schedule">
+		<div class="schedule-box">
+			<img src="./img/Schedule/주간일정표_9월_5주차.png" alt="...">
+		</div>
+	</section>
+</body>
+
+</html>
+

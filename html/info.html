@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Stardays FS</title>
+
+	<!--Twitter Card-->
+	<!--https://developer.twitter.com/en/docs/twitter-for-websites/cards/guides/getting-started-->
+	<meta property="twitter:card" content="summary" />
+	<meta property="twitter:site" content="Stellive FanSite" />
+	<meta property="twitter:title" content="Ganggi Stellive" />
+	<meta property="twitter:image" content="./img/logo/logo.jpg" />
+
+	<!--파비콘-->
+	<!--<link rel="shortcut icon" href="favicon.ico" />-->
+	<link rel="icon" href="../img/logo/logo.jpg" />
+	<!--브라우저 스타일 초기화-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
+	<!--Google Fonts - 나눔고딕-->
+	<link rel="preconnect" href="https://fonts.gstatic.com" />
+	<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet" />
+	<!--Google Material Icons-->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+
+	<!--GSAP & ScrollToPlugin-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+		integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollToPlugin.min.js"
+		integrity="sha512-nTHzMQK7lwWt8nL4KF6DhwLHluv6dVq/hNnj2PBN0xMl2KaMm1PM02csx57mmToPAodHmPsipoERRNn4pG7f+Q=="
+		crossorigin="anonymous"></script>
+	<!--Swiper-->
+	<link rel="stylesheet" href="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css" />
+	<script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script>
+	<!--ScrollMagic-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+	<!--Lodash-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js"
+		integrity="sha512-90vH1Z83AJY9DmlWa8WkjkV79yfS2n2Oxhsi2dZbIv0nC4E6m5AbH8Nh156kkM7JePmqD6tcZsfad1ueoaovww=="
+		crossorigin="anonymous"></script>
+
+	<!--Local Script-->
+	<link rel="stylesheet" href="../css/main.css">
+	
+</head>
+
+<body>
+	<!--Top Bar-->
+	<header class="topbar">
+		<section class="main--top">
+			<div class="simple--logo">
+				<a href="../index.html" target="">
+					<img src="../img/logo/logo.jpg" alt="...">
+				</a>
+			</div>
+			<div class="main--logo">
+				<a href="../index.html" target="">
+					<img src="../img/logo/logo_row.jpg" alt="...">
+				</a>
+			</div>
+			<nav>
+				<ul class="menu-nav">
+					<li>
+						<a href="../html/news.html" target="">
+							<span>NEWS</span>
+						</a>
+					</li>
+					<li>
+						<a href="../html/info.html" target="">
+							<span>INFO</span>
+						</a>
+					</li>
+					<li>
+						<a href="../html/mainAlbums.html" target="">
+							<span>MAIN ALBUMS</span>
+						</a>
+					</li>
+					<li>
+						<a href="https://fanding.kr/@STARDAYS" target="">
+							<span>GOODS</span>
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</section>
+	</header>
+
+	<!--Member Info-->
+	<header class="info-member-information">
+		<section class="top-section">
+			<div class="member-img">
+				<img src="../img/member_img/Kurenai Natsuki.jpg" alt="">
+				<button class="w-btn w-btn-gra1 w-btn-gra-anim" id="btn-1" type="button">
+					정보 보기
+				</button>
+			</div>
+			<div class="member-img">
+				<img src="../img/member_img/van_sama.jpg" alt="">
+				<button class="w-btn w-btn-gra1 w-btn-gra-anim" id="btn-2" type="button">
+					정보 보기
+				</button>
+			</div>
+			<div class="member-img">
+				<img src="../img/member_img/Terri nunna.jpg" alt="">
+				<button class="w-btn w-btn-gra1 w-btn-gra-anim" id="btn-3" type="button">
+					정보 보기
+				</button>
+			</div>
+		</section>
+
+		<!--일단 멤버 이름으로 분리 후 나중에 js에서 설정-->
+		<div id="member-1">
+			<section class="member-detail-info">
+				<h3>
+					< Kurenai Natsuki>
+				</h3>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/A4S-u38FxCs?si=IivL8q-_XqB_kK92"
+					title="YouTube video player" frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+					referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+				<div class="img-info">
+					<img src="../img/member_img/Kurenai Natsuki_2dlive.png" alt="">
+					<p>
+						쿠레나이 나츠키 | 紅夏 月 | Kurenai Natsuki <br>
+						소속 : 스타데이즈<br>
+						생일 : 8월 31일<br>
+						신체 : 161cm<br>
+						별자리 : 처녀자리<br>
+						MBTI : ENTP<br>
+						활동 개시 : 2023년 7월 16일 +396일<br>
+						캐릭터 디자인 : Choyeon -> 326<br>
+						Live 2D 모델링: _xiao -> Akari<br>
+						팬네임 : 오니노리<br>
+						오시마크 : 🎴👹<br>
+						방송장르 : 노래, Just Chatting, 게임<br>
+						치지직 팔로워 : 1.2만명<br>
+						유튜브 구독자 : 1.15만명<br>
+					</p>
+				</div>
+				<div class="broad-rule">
+					<h3>
+						< 방송규칙>
+					</h3>
+					<p>
+						1. 다른 방에서 안 된다는 거 거의 다 여기도 안됩니다!<br>
+						2. 단, 유잼무죄의 원칙을 따르고 있습니다...ㅎ;<br>
+						3. 선 넘었다 싶은 순간에 채팅 임시 제한이 걸릴 수 있습니다!<br>
+						4. 영구밴은 선생님 아무래도 저희는 인연이 아닌가봅니다..의 표시지만 해명하고 싶은 부분 등이 있다면 네이버 스타데이즈 카페 1:1 채팅 혹은 트위터 멘션으로 말씀주세요!<br>
+						5. 싸우거나 울적한 얘기 말고 재밌는 얘기 즐거운 얘기 많이해요!! 5번이 제일 중요함! 이상!!!! 공지였습니다!<br>
+					</p>
+				</div>
+
+				<div class="meme-rule">
+					<h3>
+						< 밈>
+					</h3>
+					<p class="meme-rule">
+						탑골 : 노년층이 많이 모인다는 탑골공원에서 유래. 일반 시청자층에 비해 좀 더 연령이 높은 시청자들이 공감할만한 주제가 나오는 상황을 탑골 혹은 탑골이 열렸다 라고 표현한다.<br>
+						심연 : 사회적으로 받아들여지기 쉽지 않은, 정상의 범주에서 벗어난 매니악한 주제를 가리키는 말. 대표적인 예시로 퍼리, 얼리어답터 등이 있다. 저챗 방송의 경우 의식의 흐름에 따라 주제가 자주
+						바뀌는 편인데, 나츠키 본인이 서브컬처 및 오타쿠적 지식이 풍부하기 때문에 의도치 않게 이러한 심연쪽으로 주제가 흘러가는 경우를 심심치 않게 볼 수 있다.<br>
+						할모오니 : 할머니와 오니를 합성한 말. 방송 진행자가 구세대적이거나 나이들어보이는 언행을 했을때 주로 사용된다.<br>
+						문득 : 의식의 흐름에 따라 대화주제가 자주 변하는 편이다. 일반적으로 대화를 진행하다가도 갑자기 어떠한 생각이 떠올랐다며 화제를 갑자기 전환하는 경우를 가리켜 사용한다.<br>
+						나츠끼 : 나츠키가 남긴 끼니의 줄임말. 식사를 하고 음식을 남기는 경우가 종종 있다. 특히 양이 많은 배달 음식의 경우 높은 확률로 나츠끼가 된다.[10]<br>
+						~라고 하면 안 되겠죠? : 하고싶은 말을 직설적으로 한 다음 너무 심했다고 생각될 경우 종종 붙이는 말. 라고 할 뻔과 유사한 형태를 갖는 경우가 많다. 같은 스타데이즈 멤버인 테리 눈나도
+						마음에
+						들었는지 종종 따라하며 사용하곤 한다.<br>
+						ㅔㅡ, 에읇 : 당황했거나 어딘가 불리하거나 회피하고 싶은 상황일 때에 자주 내는 소리. 때문에 위의 라고 하면 안 되겠죠?와도 세트로 사용되는 경우가 많다.<br>
+						쓰읍, 추릅 : 특유의 침 삼키는 소리. 위의 ㅔㅡ, 에읇과 마찬가지로 무언가 당당하지 못할 상황일 때 자주 내곤 한다. 다른 스타데이즈멤버들이 나츠키의 성대모사를 할 때 종종 따라하곤
+						한다.<br>
+						갈닦 : 갈고 닦다. 즉, 기술이나 재주 따위를 연마하는 것. 나츠키가 항상 강조하는 덕목 중 하나이다.<br>
+						틀니틀니 : 팬네임의 변형으로 방송 진행 중 나오는 옛날 이야기에 공감하거나 최근 이야기를 다루는 주제에 세대차이를 느끼는 시청자층을 가리키는 용어.<br>
+						부장부장 : 위의 틀니틀니에서 한 단계 더 진화하여, 마치 회사의 부장님과 같은 행보를 보이거나 실제로 회사에서 고위직을 위임하고 있을 것으로 추측되는 시청자층을 가리키는 용어.<br>
+						덧니덧니 : 틀니틀니와는 반대로 나이가 상대적으로 어린 시청자층을 가리키는 용어.<br>
+						알파미역 : 알파메일+미역. 매일 방구석에서 방송만 보는 사람들과는 대척점에 있는 존재.<br>
+						인간시절 : 오니의 육체를 얻기 이전의 시절을 가리키는 단어이다.<br>
+						참기름 : 나츠키의 행동으로 인하여 오니노리의 머리가 깨졌을 때 흘러나오는 액체. 주로 참기름 흐른다등의 표현으로 묘사된다.<br>
+						켄시버튼 : 요네즈 켄시를 굉장히 좋아한다. 때문에 어떠한 계기로 요네즈 켄시와 관련된 이야기가 나오면 곧잘 본인이 아는 정보를 늘어놓는데, 이러한 행동이 지속되어 밈이 되었다. 요네즈 켄시라는
+						활동명을 사용하기 이전 보컬로이드 프로듀서 시절부터 즐겨 들었으며, 특히 1집과 2집을 좋아한다고 한다.<br>
+						나컬로이드 : 나츠키와 보컬로이드를 합성한 말. 보컬로이드 노래들을 좋아하고 굉장히 자주 부른다. 프로그램이 부르는 보컬로이드 노래 특성 상 사람이 부를 것을 가정하지 않고 만들어졌기 때문에
+						호흡
+						구간이나 고음에 의해 사람이 부르기에는 힘겨운 곡이 많은데, 이러한 곡들조차도 곧잘 불러버린다고 하여 붙여진 별명이다.<br>
+						홍하월 : 풀네임인 쿠레나이 나츠키를 한자 음독으로 읽은 말.<br>
+						육회핑크 : 시그니쳐 컬러중 하나인 분홍색을 가리키는 말. 방송 중 주기적으로 육회를 먹어줘야 선명한 핑크빛을 유지할 수 있다고 말한 바 있다. 육회는 스트리머 나츠키가 가장 좋아하는 음식 중
+						하나로 종종 언급된다.<br>
+						기억소거장치 : 마음에 들지 않는 기억은 금세 잊어버리는 기능을 가지고 있다고 한다.<br>
+						괴도 : 게릴라 방송은 원래 사전에 알리지 않고 켜는 것인데도 불구하고 미리 예고를 하고 게릴라 방송을 켜는 모습이 마치 본인이 찾아올 것을 예고하는 괴도의 행동패턴과 유사하다고 하여 생긴
+						밈<br>
+						사이버 양기충전 : 네이버 시리즈, 리디북스, 카카오페이지 등의 온라인 창작물로 양기를 충전하는 것.<br>
+						문도 데이 : 특별한 일정이나 계획 없이 즉석으로 하고싶은 것을 하는 날. 리그 오브 레전드의 챔피언 문도 박사의 대사인 "문도 가고싶은 데로 간다."에서 유래.<br>
+						접시뺏기 : 노래를 부르다가 성에 차지 않으면 1절에서 끊어버리는 경우가 많은데 이것이 마치 식당에서 다 먹지도 못한 음식을 도로 가져가버리는 것처럼 느껴진다고 하여 생긴 밈.<br>
+						냉동제육 : 방송 아카이브[11]를 가리키는 말. 그 중에서도 특히 휴방기간에 볼 수 있도록 남겨둔 다시보기를 가리키는 경우가 많다. 휴방 기간 동안 볼 수 있는 다시보기 분량을 확보해두는 것이
+						마치 어머니가 여행을 가기 전 대용량 반찬거리를 만들어두는 것과 비슷하다고 하여 생긴 밈.<br>
+						오이핫도그 : 유행 중이거나 주변에서 자주 회자되거나 하는 등 사회적 인지도가 있지만, 정작 나츠키 본인은 취향에 맞지도 않고 관심도 흥미도 전혀 없어 시도해볼 마음이 들지 않는 것들을 가리키는
+						말. 이러한 것을 강제로 권하면 오히려 더 먹기 싫어지고 멘탈에도 좋지 않은 영향을 끼친다고 한다.<br>
+						파리의 시차, 나원재 : 신체리듬이 한국보다 프랑스에 가깝다고 하여 생긴 밈. 래퍼 우원재의 곡 시차 (We Are)의 가사인 난 쟤들이 돈 주고 가는 파리의 시간을 사는 중이라 전해 에서
+						유래.<br>
+						아침쯤에 잠들어서 오후에 일어나는 경우가 잦다.<br>
+						연어무침 : 장난이나 뇌절이 심해진다 싶을 때 이것을 그만해달라는 뜻으로 외치는 일종의 키워드. 같은 스타데이즈 멤버중 한명인 반(인터넷 방송인)의 제안으로 만들어졌다.<br>
+						오니노리실버타운: 언젠가 지어질 예정이라는 오니노리들의 종합거주타운노후복지시설. 방송 중 시티즈: 스카이라인으로 미래의 실버타운을 설계해보는 컨텐츠를 진행하기도 했다.<br>
+						달팽이 던지기 : 메이플스토리의 기초 직업인 초보자의 스킬 달팽이 세 마리에서 유래. 노래를 부른 경력이 제법 오래되었음에도 불구하고 고음을 낼 때 보컬들이 일반적으로 사용하는 (성대에 부담을
+						덜
+						가도록 하는)발성 기술을 사용하지 않고 타고난 호흡량과 파워로 밀어붙이는 방식을 계속 사용해왔다. 이것이 마치 기본적인 전직을 건너뛰고 계속 초보자 상태로 달팽이껍질만 던져 레벨업을 하는것과
+						비슷한
+						형국이라 하여 생긴 밈. 나츠키 본인은 오히려 이 방식을 일반적인 방식으로 알고있었다고 한다.<br>
+						제철오니 : 평소보다 살집이 오른 상태를 뜻하는 말.[14] 제철이라는 표현은 다른 스타데이즈 멤버들의 방에서도 심심찮게 사용된다.<br>
+						지가심연열어노코노리탓탓 : 방송중 심연으로 나츠키가 이야기를 주도한 후 오니노리들에게 책임을 떠넘길때 오니노리들이 항의의 뜻으로 사용되고 있다. 유래는 일본의 만화 사슴 아이 어슬렁어슬렁
+						호시탐탐의
+						일본어 원제목인 시카노코노코노코코시탄탄에서 따온 지가○○노코노코○○탓탓 밈.<br>
+						서커스, 차력쇼 : 일반적으로 부르기 힘든 고음곡들을 부르는 것을 일컫는 말. 주로 고음곡이 많은 보컬로이드노래를 부를 때 이 표현이 사용된다.<br>
+					</p>
+				</div>
+			</section>
+		</div>
+
+		<div id="member-2">
+			<section class="member-detail-info">
+				<h3>
+					< Van Sama>
+				</h3>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/GHrQ499HXH4?si=3BUAKGsg-sxVOkll"
+					title="YouTube video player" frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+					referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+				<div class="img-info">
+					<img src="../img/member_img/van_sama_model.png" alt="">
+					<p>
+						반 | Van_Sama <br>
+						소속 : 스타데이즈 / 본관 : 우주 (VE-01 행성)<br>
+						생일 : 1999년 5월 27일<br>
+						신체 : 159cm<br>
+						별자리 : 쌍둥이자리<br>
+						MBTI : ISTP<br>
+						활동 개시 : 2019년 12월 13일<br>
+						캐릭터 디자인 : 릴리<br>
+						Live 2D 모델링: MONO, Mu_O<br>
+						팬네임 : 호코리<br>
+						방송장르 : Just Chatting, 노래, 게임<br>
+						치지직 팔로워 : 2만명<br>
+						유튜브 구독자 : 3.72만명<br>
+					</p>
+				</div>
+				<div class="broad-rule">
+					<h3>
+						< 방송규칙>
+					</h3>
+					<p>
+						。기본적인 예의를 지켜주세요.<br>
+						。반님이 먼저 말하지 않는 이상 타 스트리머 언급 금지. 팀 멤버도 금지.<br>
+						。정치적 발언, 욕설, 비판, 과도한 훈수 등등 논란이 될 만한 발언 하지 마세요.<br>
+						。유입분들에게 상냥하게 대해주세요. 본인들끼리 아는 얘기, 늘 첫 만남처럼 해주세요.<br>
+						。과도한 전긍정, 오구오구 금지. 아닌 건 아닌 겁니다.<br>
+						。자신을 드러내는 행동, 행위 금지 (셀프 네임드화)<br>
+					</p>
+				</div>
+
+				<div class="meme-rule">
+					<h3>
+						< 어록>
+					</h3>
+					<p class="meme-rule">
+						꽥꽥이 : 반님 방송에서 오리고기를 칭하는 말이다.<br>
+						닭둘기 : 태그를 음악으로 설정하면 노래만 들으러 오는 트수를 칭하는 말.<br>
+						버추얼하지 않은 발언이야 : 가끔 호코리가 "버추얼 모델이 튄다" 등 화면에 보이는 반님의 모습을 현실로 받아들이지 않는(?) 발언을 하거나 빨간약을 언급하는 경우 하는 말이다.<br>
+						유료료 : 언아카 방송 진행 중 시청자가 방송을 다시 볼 수 없냐고 물어보자 유료료 보라고 하였다. 이후 유로트럭유료트럭을 하고 싶다고 말했다.<br>
+						제일 사람같이 생긴 건 난데 : 2022년 11월 4일 나츠에와 쵸키와의 싱크룸 즉석 합방에서 셋 모두 지구인이 아님을 얘기하다가 나온 발언이다.<br>
+						휘뚜루마뚜루삐리삐리뽕뽕 : 방송 규칙 참고<br>
+						TSKR(타스카루) : 일본어 助かる에서 유래. 직역하면 '살았다' 정도의 의미지만, 방송에선 ThankS KoRea를 의미한다.<br>
+						자꾸~ : 스타데이즈 쇼케이스에서 롤러코스터를 오토튠을 넣어 부르다가 가사중 자꾸 부분이 밈으로 꼽히고 있다. 특히 오토튠 + 롤러코스터의 원조인 똘똘똘이 때문에 더 밈으로 꼽힌다.<br>
+						어처라고 : 어쩌라고가 특유의 발음 탓에 어'처'라고로 들리는 탓에 밈처럼 자리잡았다. 다른 스타데이즈 멤버들도 심심찮게 따라하며, '어처라고 먼천아~' 와 같은 식으로 활용되기도 한다.<br>
+						올라프 : 23년 10월 5일자 방송에서 창문을 열어놓고 춥게 자는것에 대한 주제로 이야기하던 중 나온 충격적인 발언 "창문 열고 그렇게 다 벗고 자면 너는 이제 진짜 올라프가 되는거임. 아
+						올라프
+						당근이 거기로 갔네."에서 유래. 이후 방송에서 대놓고 말하기 어려운 그것에 대한 대체어로 사용된다.<br>
+						너 그거 습관적 머리깨기야 : 다른 멤버가 팬들을 플러팅하는 모습을 보았을때 종종 하는 말.<br>
+						마이너스 대답이야 : 마음에 들지 않는 답변을 들었을때 종종 하는 말.<br>
+						연어무침 : 장난이나 뇌절이 심해진다 싶을 때 이것을 그만해달라는 뜻으로 외치는 일종의 키워드.<br>
+					</p>
+				</div>
+			</section>
+		</div>
+
+		<div id="member-3">
+			<section class="member-detail-info">
+				<h3>
+					< Terri nunna>
+				</h3>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/FfIh8S2xRFE?si=eYoUslFxvPRODFN5"
+					title="YouTube video player" frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+					referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+				<div class="img-info">
+					<img src="../img/member_img/Terri nunna_model.png" alt="">
+					<p>
+						테리 눈나 | Terri nunna <br>
+						소속 : 스타데이즈<br>
+						생일 : 2004년 9월 6일<br>
+						신체 : 154cm<br>
+						별자리 : 처녀자리<br>
+						MBTI : INFP<br>
+						활동 개시 : 2023년 1월 16일 +577일<br>
+						캐릭터 디자인 : msh<br>
+						Live 2D 모델링: NoahhNim<br>
+						팬네임 : 올리고당<br>
+						오시마크 : ✝️<br>
+						방송장르 : 노래, Just Chatting, 게임<br>
+						치지직 팔로워 : 2.2만명<br>
+						유튜브 구독자 : 7만명<br>
+					</p>
+				</div>
+				<div class="broad-rule">
+					<h3>
+						< ✝️수도원 규칙✝️>
+					</h3>
+					<p>
+						† 이곳은 성스러운 수도원입니다. 사랑으로 서로를 대합시다.<br>
+						† 형제들 간의 싸움은 금물입니다. 과도한 친목 역시 금합니다.<br>
+						† 종교 비하, 정치적 발언은 금지입니다.<br>
+						† 제가 언급하지 않는 이상 다른 방송인을 먼저 언급하지 말아주세요.<br>
+						† 자신이나 타인의 네임드화를 유발하는 행위를 금합니다.<br>
+						† 방송 흐름에 지장을 주는 훈수나 도네는 자제해주세요.<br>
+						† 지나친 욕설, 훈수, 물타기를 금합니다.<br>
+						† 스트리머가 언급하지 않는 이상 다른 시청자의 행동을 제제하거나 방 분위기를 이끌어가려고 하지 말아주세요.<br>
+					</p>
+				</div>
+
+				<div class="meme-rule">
+					<h3>
+						< 밈>
+					</h3>
+					<p class="meme-rule">
+						테바리보, 테쟈리코: 방송에서 서툰 모습을 자주 보이고, 덤벙대는 모습도 자주 보여 붙여진 별명<br>
+						넌 올리고당: 팬 네임인 올리고당과 넌 나가라를 합쳐 만들어진 밈. 주님께 올려보내겠다는 뜻이다.<br>
+						테또먹: 방송 시간이 저녁시간이라 그런지 방송 중 간식거리를 자주 먹어서 생긴 밈<br>
+						갑자기 노래함: 방송 진행 중, 뇌리에 스치는 말이 있으면 갑자기 노래를 해서 생긴 밈<br>
+						테리테리 마스마스 카와이: 5000포인트 보상 시그니쳐 대사. 테리테리 마스마스 XXX의 형태로 다양하게 변형되어 사용되기도 한다.<br>
+						45살: 정신연령 테스트에서 45이 나왔고, 트로트를 부를 때가 많아서 생긴 밈<br>
+						테리 우슨 : 테리 우승의 발음이 뭉개져서 생긴 밈. 테리를 칭찬하거나 달랠 때 등 광범위하게 사용된다.<br>
+						습기닦아라(好きだから) : 트윗 캐스에서 (내일 일정을)신경을 왜 쓰지 라는 올리고당의 발언에 '좋아하니까' 의 일본어 '스키다카라'라고 답하였는데 발음(?)이 좋지않아 생긴 밈<br>
+						죠책복음 : Just Chatting의 BGM이라는 뜻이다. 저챗브금 이라는 말이 발음이 뭉개져서 죠책복음이 되었다.<br>
+						퐉수녀 : Fox + 수녀가 섞여서 퐉수녀가 되었다.<br>
+						큿소큿소큿소큿소 : 무언가 짜증나거나 분할때마다 자주 내뱉는 말.<br>
+						지겨 : 지켜 라는 뜻. '테리 목 지겨'와 같은 형태로 사용된다.<br>
+						비커 : 비켜 라는 뜻. 발음상의 문제로 비켜가 비커가 되었다.<br>
+						삐 : 평소에 아무런 의미도 없이 자주 내뱉는 말. 포켓몬의 울음소리와 비슷하다고 생각하면 된다.<br>
+						팍C : 지하철 빌런들을 좋아하는데, 그 중 "팍씨, 자리에 앉아."대사를 특히 마음에 들어하여 자주 사용한다. 이외에도 "최고의 에이스", "영웅이라고" 등의 대사도 종종 사용한다.<br>
+						밴아트 : 밴(BAN)+팬아트. 악질 팬아트. 같은 스타데이즈멤버들 중에서도 유독 개그, 악질 팬아트가 많은 편이다. 밴아트라 하더라도 팬들이 하나하나 애정을 담아 그렸다는 사실에는 변함이
+						없다.<br>
+						이돤봘봨췸때(이단 발받침대) : 해당 영상 참조. 술이 들어간 상태여서 발음 상태가 평소보다도 한층 더 심각했다.<br>
+						이자식아 : 무언가 거친 문장을 내뱉을 때마다 습관적으로 말꼬리에 붙이는 말. 진심으로 화를 낼 때보다 다소 장난스러운 상황에서 더 자주 사용한다.<br>
+						오니방패 : 무언가 불리하거나 회피하고싶은 상황, 혹은 팩트폭력을 하고 싶은 상황일 때에 종종 같은 스타데이즈멤버인 쿠레나이 나츠키의 말투를 따라하곤 한다. 라고 할 뻔과 유사한 형태를 갖는
+						경우가
+						많다. 가장 대표적인 패턴에는 "~라고 하면 안되겠죠 (스읍)[15]", "에읇..."등이 있다.<br>
+						완빨라 : 왕 빠르다는 뜻. 가장 대표적인 용례는 테리 뛰는준~ 테리 완빨라~[16]이다. '완'은 빠르다 이외의 다른 형용사와도 종종 결합되어 사용된다.<br>
+						실서 : 싫어 라는 뜻. TTS가 싫어를 실서로 발음하는 데에서 유래. 여기서 파생된 반의어인 좋서도 심심치 않게 사용된다.<br>
+						연어무침 : 장난이나 뇌절이 심해진다 싶을 때 이것을 그만해달라는 뜻으로 외치는 일종의 키워드. 같은 스타데이즈 멤버중 한명인 반(인터넷 방송인)의 제안으로 만들어졌다.<br>
+						고릴라 : 게릴라 방송을 가리키는 말.<br>
+					</p>
+				</div>
+			</section>
+		</div>
+
+	</header>
+
+	<script defer src="../js/main.js"></script>
+</body>
+
+</html>

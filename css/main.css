@@ -1,0 +1,522 @@
+/* COMMON */
+a {
+	text-decoration: none;
+}
+
+p, h1, h2, h3 {
+	font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header nav li {
+	padding: 0 0 0 15px;
+}
+
+img {
+	object-fit: contain;
+}
+
+body {
+	width: 100%;
+	margin-bottom: 30px;
+	background: linear-gradient(#cdbaea, #e8dff4);
+	overflow-x: hidden;
+}
+
+/*==========================================Main======================================*/
+/* MAIN TOP */
+.topbar .main--top {
+	display: flex;
+	width: 100%;
+	background-color: white;
+	height: 10vh;
+	justify-content: space-evenly;
+	margin: auto;
+}
+
+.topbar .main--top .simple--logo img {
+	width: 80%;
+	height: 100%;
+	object-fit: contain;
+}
+
+.topbar .main--top .main--logo {
+	position: absolute;
+	align-items: center;
+}
+
+.topbar .main--top .main--logo img {
+	width: 100%;
+	height: 10vh;
+	border-radius: 30px;
+}
+
+header nav {
+	width: 80%;
+	align-content: center;
+	margin-right: 20px;
+}
+
+header .menu-nav {
+	display: flex;
+	margin-top: 15px;
+	justify-content: right;
+}
+
+.menu-nav li {
+	list-style-type: none;
+	font-family: 'Trebuchet MS';
+	font-weight: bold;
+	font-size: large;
+
+	margin-right: 20px;
+}
+
+/* MAIN Middle */
+.middle-img {
+	display: flex;
+	height: 32rem;
+	justify-content: center;
+	margin: 20px 10px 20px 10px;
+}
+
+.middle-img img {
+	width: 40%;
+	object-fit: cover;
+}
+
+/* MAIN Member */
+.member-icon-group {
+	position: relative;
+	display: flex;
+	width: 100%;
+	justify-content: center;
+}
+
+.member-icon-group .member {
+	margin: 5px 40px 5px 40px;
+}
+
+.member-icon-group .member .member-img {
+	display: flex;
+	justify-content: center;
+	margin: auto;
+}
+
+.member-icon-group .member .member-img a>img {
+	width: 100px;
+	height: 100px;
+	border-radius: 50px;
+	margin: 5px 10px 5px 10px;
+}
+
+.member-icon-group .member .member-img p {
+	margin-top: 10px;
+	text-align: center;
+	font-family: 'Trebuchet MS';
+	font-weight: bolder;
+	font-size: 16px;
+}
+
+.member-icon-group .member .member-sns {
+	display: flex;
+}
+
+.member-icon-group .member .member-sns a img {
+	width: 50px;
+	height: 50px;
+	border-radius: 10px;
+	margin: 5px 10px 5px 10px;
+}
+
+/*===========================regular album=======================*/
+/*album*/
+.album {
+	/*width: auto;*/
+	height: 500px;
+	position: relative;
+	transition: height .4s;
+}
+
+.album.hide {
+	/* 토글 */
+	height: 0;
+}
+
+.album .swiper-container {
+	/* 819px 슬라이드 3개와 그 사이 여백 10px씩 = 2477px */
+	width: calc(819px * 3 + 20px);
+	height: 370px;
+	position: absolute;
+	top: 50px;
+	left: 50%;
+	margin-top: 20px;
+	margin-left: calc((819px * 3 + 20px) / -2.14);
+	/* 왼쪽으로 50%밀고 마진으로 가로 넓의의 절반만큼 움직임.*/
+}
+
+.album .swiper-slide {
+	/*양옆흐림*/
+	position: relative;
+	width: 820px;
+	height: 370px;
+	opacity: .5;
+
+	transition: opacity 1s;
+}
+
+.album .swiper-slide .youtube__area {
+	width: 820px;
+	height: 370px;
+}
+
+.album .swiper-slide-active {
+	opacity: 1;
+}
+
+.album .swiper-slide .btn {
+	/*width: 130px;*/
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+.album .swiper-pagination {
+	bottom: 40px;
+	left: 0;
+	right: 0;
+	z-index: 0;
+}
+
+.album .swiper-pagination .swiper-pagination-bullet {
+	margin-right: 2rem;
+}
+
+
+.album .swiper-prev,
+.album .swiper-next {
+	width: 42px;
+	height: 42px;
+	outline: none;
+	border: 2px solid #333;
+	border-radius: 50%;
+	position: absolute;
+	/* Swiper Container 높이의 절반만큼 끌어올림 */
+	/* 버튼 높이의 절반만큼 추가로 끌어올림 */
+	top: 300px;
+	z-index: 1;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: .4s;
+}
+
+.album .swiper-prev {
+	left: 50%;
+	margin-left: -480px;
+}
+
+.album .swiper-next {
+	right: 50%;
+	margin-right: -480px;
+}
+
+.album .swiper-prev:hover,
+.album .swiper-next:hover {
+	background-color: #333;
+	color: #fff;
+}
+
+/*===========================Schedule=======================*/
+h2.index {
+	margin: 10px 0 30px 100px;
+	font-family: 'Trebuchet MS';
+	font-weight: bolder;
+	font-size: 30px;
+}
+
+.members-schedule {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	height: 40vh;
+}
+
+.members-schedule .schedule-box img {
+	width: 100%;
+	height: 40vh;
+
+	object-fit: contain;
+	margin-bottom: 30px;
+}
+
+/*==========================================NEWS======================================*/
+body h2.main-index {
+	font-family: 'Trebuchet MS';
+	font-size: 30px;
+	font-weight: bolder;
+	text-align: center;
+	margin: 20px 0 20px 0;
+}
+
+body>iframe{
+	margin: 20px 0 40px 35%;
+}
+
+.main-content {
+	display: flex;
+	width: 100%;
+	height: 40vh;
+	justify-content: center;
+	margin-bottom: 4rem;
+}
+
+.main-content .content-img {
+	width: 35.5%;
+	margin-right: 20px;
+}
+
+.main-content .content-img img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+.main-content .content-info {
+	width: 46%;
+	height: 50vh;
+
+}
+
+.main-content .content-info>p {
+	font-family: 'Trebuchet MS';
+	font-size: 18px;
+	font-weight: bolder;
+}
+
+.main-content .content-info details .information {
+	display: flex;
+	width: 100%;
+	height: 20rem;
+	justify-content: center;
+}
+
+.main-content .content-info details .information p{
+	font-size: 16px;
+	line-height: 22px;
+}
+
+.main-content .content-info details .information img {
+	width: 14vw;
+	height: 36vh;
+	justify-content: center;
+	padding-top: 40px;
+	margin-right: 8px;
+}
+
+.main-content .content-info details div p {
+	text-align: center;
+	align-content: center;
+	line-height: 16px;
+	font-size: 10px;
+}
+
+.main-content .content-info details .img-line {
+	display: flex;
+	width: inherit;
+	height: 20vh;
+	justify-content: center;
+}
+
+.main-content .content-info details .img-line img {
+	width: 60%;
+	height: 78%;
+	object-fit: contain;
+}
+
+/*==========================================Info======================================*/
+
+#member-1, #member-2, #member-3{
+	display: none;
+}
+
+.info-member-information{
+	width: 100%;
+	height: 2800px;
+}
+
+.info-member-information .top-section {
+	display: flex;
+	height: 300px;
+	justify-content: center;
+}
+
+.top-section .member-img {
+	width: 140px;
+	height: 140px;
+	margin: 30px 40px 10px 40px;
+}
+
+.top-section .member-img img{
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	border-radius: 20px;
+}
+
+/*  BUTTON  */
+.w-btn {
+	position: relative;
+	border: none;
+	display: inline-block;
+	padding: 10px 20px;
+	border-radius: 15px;
+	font-family: "paybooc-Light", sans-serif;
+	box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+	text-decoration: none;
+	font-weight: 600;
+	transition: 0.25s;
+	margin-top: 10px;
+	margin-left: 20px;
+}
+
+.w-btn:hover {
+	letter-spacing: 2px;
+	transform: scale(1.2);
+	cursor: pointer;
+}
+
+.w-btn:active {
+	transform: scale(1.5);
+}
+
+.w-btn-gra1 {
+	background: linear-gradient(-45deg, #33ccff 0%, #ff99cc 100%);
+	color: white;
+}
+
+.w-btn-gra-anim {
+	background-size: 400% 400%;
+	animation: gradient1 5s ease infinite;
+}
+
+@keyframes gradient1 {
+	0% {
+			background-position: 0% 50%;
+	}
+	50% {
+			background-position: 100% 50%;
+	}
+	100% {
+			background-position: 0% 50%;
+	}
+}
+
+/*==========================================MEMBER INFO DETAILS======================================*/
+.member-detail-info	 {
+	width: 100%;
+	text-align: center;
+}
+
+.member-detail-info	 h3{
+	font-weight: bolder;
+	margin-bottom: 40px;
+}
+
+.member-detail-info iframe {
+	margin-bottom: 40px;
+}
+
+.member-detail-info .img-info{
+	display: flex;
+	width: 100%;
+	height: 300px;
+	justify-content: center;
+	margin-bottom: 50px;
+}
+
+.member-detail-info .img-info p{
+	align-content: center;
+	font-size: 14px;
+	font-weight: bolder;
+	line-height: 20px;
+
+	margin-left: 30px;
+}
+
+.broad-rule {
+	margin-bottom: 30px;
+}
+
+.broad-rule h3{
+	font-size: 20px;
+	font-weight: bolder;
+}
+
+.broad-rule p {
+	font-size: 14px;
+	font-weight: bolder;
+	line-height: 20px;
+}
+
+.meme-rule {
+	margin-bottom: 30px;
+}
+
+.meme-rule h3{
+	font-size: 20px;
+	font-weight: bolder;
+}
+
+.meme-rule p {
+	width: 80%;
+	padding-left: 10%;
+	text-align: left;
+	font-size: 14px;
+	font-weight: bolder;
+	line-height: 30px;
+	height: 1500px;
+	scrollbar-width: none;
+	overflow-y: scroll;
+}
+
+/*==========================================Album Page======================================*/
+
+.music--list .group--name {
+	width: 100%;
+	padding: 10px 0 10px ;
+	text-align: center;
+	font-size: 30px;
+	font-weight: 900;
+}
+
+.music--list .members-musiclist {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	padding: 10px 30px 10px 30px;
+}
+
+
+.music--list .members-musiclist .members-group h3{
+	font-size: 24px;
+	font-weight: 800;
+	padding-left: 30px;
+	margin: 30px 0 20px 0;
+}
+
+.music--list .members-musiclist .members-group .members-playlist{
+	width: 100%;
+	display: flex;
+
+}
+
+.music--list .members-musiclist .members-group .members-playlist iframe{
+	margin: 10px 30px 10px 10px;
+
+}
+.music--list .members-musiclist .members-group .members-playlist .under-list {
+	margin-top: 30px;
+}
