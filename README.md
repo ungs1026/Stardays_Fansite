@@ -4,7 +4,7 @@
 
 <hr>
 
-# 목차
+## 목차
 <!--목차-->
 - [Project](#project)
     - [Features](#features)
